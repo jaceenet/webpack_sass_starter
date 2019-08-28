@@ -24,10 +24,19 @@ module.exports = {
       },
       {
         test: /\.(s*)css$/,
-        use: ['style-loader', 'css-loader', {
+        use: [
+          'style-loader',
+          'css-loader', {
           loader: 'sass-loader',
           options: {
             paths: [path.resolve(__dirname, "node_modules")],
+          }
+        },
+        'resolve-url-loader',
+        {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true
           }
         }]
       },
@@ -40,6 +49,10 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      },
+      {
+        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        use: 'file-loader'
       }
 
     ]

@@ -6,13 +6,16 @@
 }
 
 .input-area:hover .buttons{ display: flex;}
+
 .buttons {
+  border-radius: 10px;
+  padding: 10px 20px 10px 30px;
   display: none;
   position: absolute;
-  top: 0;
+  top: -10px;
   height: 100%;
-  width: 500px;
-  left: 100%;
+
+  left: calc(100% - 10px);
 
   justify-items: right;
   justify-content: bottom;
