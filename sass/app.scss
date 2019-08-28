@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Oswald|Permanent+Marker&display=swap');
 
+// $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+// @import url('~@fortawesome/fontawesome-free/scss/fontawesome.scss');
+
 $font_marker: 'Permanent Marker', cursive;
 $font2_title: 'Oswald', sans-serif;
 $font3_text: 'Advent Pro', sans-serif;
@@ -10,8 +14,8 @@ $font3_text: 'Advent Pro', sans-serif;
 
 html {
   font-family: $font3_text;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 
-//@import 'presentation_1.0';
+@import 'form';

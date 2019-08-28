@@ -24,7 +24,12 @@ module.exports = {
       },
       {
         test: /\.(s*)css$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', {
+          loader: 'sass-loader',
+          options: {
+            paths: [path.resolve(__dirname, "node_modules")],
+          }
+        }]
       },
       {
         test: /\.svg$/,
