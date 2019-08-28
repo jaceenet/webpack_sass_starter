@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Oswald|Permanent+Marker&display=swap');
+
+$font_marker: 'Permanent Marker', cursive;
+$font2_title: 'Oswald', sans-serif;
+$font3_text: 'Advent Pro', sans-serif;
+
+* {
+  margin: 0;
+}
+
+html {
+  font-family: $font3_text;
+  font-size: 10px;
+}
+
+
+//@import 'presentation_1.0';
